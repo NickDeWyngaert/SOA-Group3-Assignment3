@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="/todo" name="TodoAPI" xmlns="http://ws.apache.org/ns/synapse">
+    <resource methods="DELETE POST PUT GET" url-mapping="/*">
+        <inSequence>
+            <send>
+                <endpoint>
+                    <address format="rest" uri="http://127.0.0.1:8000/to_do_items">
+                        <suspendOnFailure>
+                            <initialDuration>-1</initialDuration>
+                            <progressionFactor>1</progressionFactor>
+                        </suspendOnFailure>
+                        <markForSuspension>
+                            <retriesBeforeSuspension>0</retriesBeforeSuspension>
+                        </markForSuspension>
+                    </address>
+                </endpoint>
+            </send>
+        </inSequence>
+        <outSequence>
+            <send/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+</api>
