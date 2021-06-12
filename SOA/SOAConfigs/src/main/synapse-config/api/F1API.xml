@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<api context="/f1" name="F1API" xmlns="http://ws.apache.org/ns/synapse">
+<api context="/f1_teams" name="F1API" xmlns="http://ws.apache.org/ns/synapse">
     <resource methods="DELETE POST PUT GET" url-mapping="/*">
         <inSequence>
             <send>
                 <endpoint>
-                    <address format="rest" uri="http://localhost:5000/f1_teams">
+                    <address uri="http://localhost:5000/f1_teams">
                         <suspendOnFailure>
                             <initialDuration>-1</initialDuration>
                             <progressionFactor>1</progressionFactor>

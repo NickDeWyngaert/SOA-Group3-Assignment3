@@ -261,36 +261,14 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8290/todo/",
+							"raw": "http://localhost:8290/todoitems",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "8290",
 							"path": [
-								"todo",
-								""
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Get specific todo item",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "http://localhost:8290/todo/1/",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8290",
-							"path": [
-								"todo",
-								"1",
-								""
+								"todoitems"
 							]
 						}
 					},
@@ -303,7 +281,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "",
+							"raw": "{\r\n    \"course\": \"test\",\r\n    \"name\": \"test dinges\",\r\n    \"task\": \"tesssssst\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -311,15 +289,14 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8290/todo/",
+							"raw": "http://localhost:8290/todoitems",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "8290",
 							"path": [
-								"todo",
-								""
+								"todoitems"
 							]
 						}
 					},
@@ -332,7 +309,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"name\": \"hopelijk werkt deze shit\",\r\n    \"course\": \"SOA\",\r\n    \"soort\": \"integratie opdracht\"\r\n}",
+							"raw": "{\r\n    \"course\": \"test\",\r\n    \"name\": \"test dinges\",\r\n    \"task\": \"tesssssst\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -340,16 +317,15 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8290/todo/1/",
+							"raw": "http://localhost:8290/todoitems/1",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "8290",
 							"path": [
-								"todo",
-								"1",
-								""
+								"todoitems",
+								"1"
 							]
 						}
 					},
@@ -361,16 +337,15 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8290/todo/1/",
+							"raw": "http://localhost:8290/todoitems/1",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "8290",
 							"path": [
-								"todo",
-								"1",
-								""
+								"todoitems",
+								"1"
 							]
 						}
 					},
@@ -387,14 +362,14 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8290/f1",
+							"raw": "http://localhost:8290/f1_teams",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "8290",
 							"path": [
-								"f1"
+								"f1_teams"
 							]
 						}
 					},
@@ -415,15 +390,14 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8290/f1/create",
+							"raw": "http://localhost:8290/f1_teams",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "8290",
 							"path": [
-								"f1",
-								"create"
+								"f1_teams"
 							]
 						}
 					},
@@ -444,15 +418,14 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8290/f1/update/1",
+							"raw": "http://localhost:8290/f1_teams/1",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "8290",
 							"path": [
-								"f1",
-								"update",
+								"f1_teams",
 								"1"
 							]
 						}
@@ -465,15 +438,14 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8290/f1/delete/1",
+							"raw": "http://localhost:8290/f1_teams/1",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "8290",
 							"path": [
-								"f1",
-								"delete",
+								"f1_teams",
 								"1"
 							]
 						}

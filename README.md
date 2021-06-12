@@ -19,6 +19,9 @@
 - [WSO2 + Using REST API](https://docs.wso2.com/display/ESB460/Using+the+REST+API)
 - [Quick Start Guide](https://docs.wso2.com/display/ESB500/Quick+Start+Guide)
 
+## Postman
+[SOA_Opdracht3.postman_collection.json](SOA_Opdracht3.postman_collection.json)
+
 ## Team members
 * Maxime Sateur
 * Nick De Wyngaert
